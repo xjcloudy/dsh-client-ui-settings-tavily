@@ -1,0 +1,8 @@
+# dsh-client-ui-settings-tavily bundle patch
+# Applied as a layer when a profile lists this bundle in dsh.profile.bundles.
+# The entry only occupies a Loader slot so the host scan in @deepseek-ai/dsh-client-modules
+# sees this package's `dsh.client` declaration and serves ./lib/client.js to the browser.
+
+- insert:
+    - id: ui-settings-tavily
+      name: '@deepseek-ai/dsh-client-ui-settings-tavily'
